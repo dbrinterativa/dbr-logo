@@ -1,6 +1,6 @@
-(function(){
+(function( app ){
 
-  function createDbrLogo(wrapper, mouseEvent, urlSvg) {
+  app.createDbrLogo = function(wrapper, mouseEvent, urlSvg) {
 
     var dbrIconConfig = {
       logodbr : {
@@ -56,6 +56,4 @@
     );
   }
 
-  createDbrLogo('.svg-dbr', 'mouseover', 'svgs/dbr-logo.svg');
-
-})();
+})(window);
