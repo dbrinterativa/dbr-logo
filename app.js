@@ -1,8 +1,9 @@
-var express = require('express')
-  , app = express();
+var express = require('express');
+var app = express();
+var path = express.static('src');
 
-app.use(express.static('public'));
+app.use(path);
 
-app.listen(5000, function(){
-  console.log('live');
+app.listen(5000, () => {
+  console.log('Port: 5000');
 });
